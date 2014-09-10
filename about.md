@@ -3,6 +3,7 @@ layout: page
 title: About Me
 ---
 
+
 <blockquote>
 “Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”
 <footer><cite>&mdash; Richard P. Feynman</cite></footer>
@@ -20,4 +21,4 @@ This blog serves a purpose to document some of my steps in this lifelong learnin
 
 # Contact me
 
-I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/emoosx) and [Twitter](https://twitter.com/khzaw)
+I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/emoosx) and [Twitter](https://twitter.com/khzaw).
