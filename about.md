@@ -21,4 +21,4 @@ This blog serves a purpose to document some of my steps in this lifelong learnin
 
 # Contact me
 
-I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/emoosx) and [Twitter](https://twitter.com/khzaw).
+I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/khzaw), [Twitter](https://twitter.com/khzaw) and [LinkedIn](Public Profilehttps://sg.linkedin.com/in/khzaw).
