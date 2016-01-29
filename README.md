@@ -1,1 +1,1 @@
-Repo for my [blog](http://emoosx.github.io).
+Repo for my [blog](http://khzaw.github.io).
