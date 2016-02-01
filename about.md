@@ -17,8 +17,8 @@ My interests cross Open-Source, Programming languages, Functional programming &a
 
 # About the site
 
-This blog serves a purpose to document some of my steps in this lifelong learning journey as well as occasional random stuffs.
+This blog serves a purpose to document some of my steps in this lifelong learning journey as well as occasional random rants, memoirs and musings.
 
 # Contact me
 
-I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/khzaw), [Twitter](https://twitter.com/khzaw) and [LinkedIn](Public Profilehttps://sg.linkedin.com/in/khzaw).
+I am reachable via mail at [emoosx@gmail.com](mailto:emoosx@gmail.com) and stalkable on [Github](https://github.com/khzaw), [Twitter](https://twitter.com/khzaw) and [LinkedIn](https://sg.linkedin.com/in/khzaw).
