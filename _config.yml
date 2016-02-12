@@ -1,6 +1,9 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
+
+# Plugins
+gems:             [jekyll-paginate]
 
 # Permalinks
 permalink:        pretty
@@ -9,7 +12,7 @@ permalink:        pretty
 title:            Lambda Sphere
 tagline:          'I code. Therefore, I am.'
 description:      'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random stuffs.'
-url:              http://emoosx.github.io
+url:              https://khzaw.github.io
 
 author:
   name:           'Kaung Htet Zaw'
@@ -23,4 +26,3 @@ version:          2.0.0
 github:           https://github.com/khzaw
 twitter:          https://twitter.com/khzaw
 email:            emoosx@gmail.com
-
