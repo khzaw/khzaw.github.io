@@ -18,7 +18,7 @@
 // https://github.com/poole/poole.
 
 @import "variables";
-@import "custom";
+@import "customvariables";
 @import "base";
 @import "type";
 @import "syntax";
@@ -29,3 +29,4 @@
 @import "pagination";
 @import "message";
 @import "hyde";
+@import "custom";
