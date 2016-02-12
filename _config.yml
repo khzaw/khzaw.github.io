@@ -1,9 +1,10 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
+extensions:       [fenced_code_blocks]
 highlighter:      rouge
 
 # Plugins
-gems:             [jekyll-paginate]
+gems:             [jekyll-paginate, jekyll-gist, jekyll-compose]
 
 # Permalinks
 permalink:        pretty
@@ -11,7 +12,7 @@ permalink:        pretty
 # Setup
 title:            Lambda Sphere
 tagline:          'I code. Therefore, I am.'
-description:      'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random stuffs.'
+description:      'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random musings.'
 url:              https://khzaw.github.io
 
 author:
@@ -21,8 +22,6 @@ author:
 paginate:         7
 
 # Custom vars
-version:          2.0.0
-
 github:           https://github.com/khzaw
 twitter:          https://twitter.com/khzaw
 email:            emoosx@gmail.com
