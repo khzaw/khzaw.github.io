@@ -4,6 +4,8 @@ title: Finding A Knight's Tour
 tags: algorithms, chess
 ---
 
+{% include image.html url="/img/chess-knight.jpg" %}
+
 A Knight's Tour is a sequence of moves done by a knight on a chessboard such that it visits each and every square exactly once. Subsequently, the objective of [the Knight's Tour  problem](https://en.wikipedia.org/wiki/Knight%27s_tour) is to determine whether there exists a Knight's Tour from a given starting position. In graph theory terms, it is a form of Hamiltonian path where you visit each vertex of the graph exactly once along the path. Tours can also be __cyclic__ or __closed__ if the final square is a knight's move away from the first and __acyclic__ or __open__ otherwise.
 
 {% include image.html url="/img/knights-tour.gif" caption="An example of a Knight's Tour – Credit: Wikipedia" %}
@@ -14,33 +16,11 @@ On a typical 8 x 8 chessboard, according to [this paper](http://www.combinatoric
 
 On an irregular board, the smallest rectangular board dimensions in which there is an open knight's tour is 3 x 4.
 
-Nevertheless, here are some of my programming attempts to search for a knight's tour.
+I was trying to solve problem out manually on a chessboard. There are some strategies if you start from a corner, but I keep running into dead-ends, if I start from a non-corner position. So, I resort to programming and here are some of my attempts to search for a knight's tour.
 
 ## Backtracking
 
-With a depth-first traversal with backtracking, a knight tour can be searched. The gist is that each branch of traversal, go with the first branch and if the search reaches a dead-end, go back a step and try other alternatives. Eventually, either a tour will be found or there is no possible knight tour from the given starting position.
-
-{% highlight python %}
-def knight_tour(currentpos, board, count):
-    if count >= boardsize[X] * boardsize[Y]:
-        return True
-
-    for d in offsets:
-        newpos = currentpos[X]+d[X], currentpos[Y]+d[Y]
-        if is_legal(newpos, board, boardsize):
-
-            count += 1
-            board[newpos] = count
-
-            if knight_tour(newpos, board, count):
-                return True
-            else:
-                board[newpos] = 0
-                count -= 1
-    return False
-{% endhighlight %}
-
-Hence, staring from initial position on the board (`count = 1`), at every step down the search tree, increment the count and mark it on the board. If it turns out to be a dead end, reset the position and drecemt the count. Eventually, you either find the path (`count == total number of squares`) or you can't find a knight's tour. Here is the full code.
+With a depth-first traversal with backtracking, a knight tour can be searched. The gist is that at each branch of traversal, go with the first branch and if the search reaches a dead-end, go back a step and try other alternatives. Eventually, either a tour will be found or there is no possible knight tour from the given starting position.
 
 {% highlight python %}
 X = 0
@@ -99,10 +79,12 @@ if __name__ == '__main__':
         print "No knight's tour"
 {% endhighlight %}
 
-As the size of the board grows _(`N >= 7` onwards)_, this approach will take a long time.
+Most of the magic happens in the `knight-tour` function in which, the search starts from the initial position on the board (`count=1`). From the current position, possible legal knight moves are generated and tried out by incrementing the count and marking it on the board. If a move turns out to be leading a dead end, reset the board position and the count will be decremented and it would reach the end of the function (`return False`) and exit from the a recursion instance. Eventually, a knight's tour will be found (`count == total`) provided that there is one.
+
+This approach works reasonably well for small boards but as the size of the board grows _(`N >= 7` onwards)_, the search will take exponentially longer as there would be more "center" pieces which have 8 possible moves.
 
 ## Warnsdorff's rule
-[Warnsdorff's rule](https://en.wikipedia.org/wiki/Knight%27s_tour#Warnsdorff.27s_algorithm) is a heuristic which states that in each step of the tour, the square with the least possible moves the knight can make from that square is favored. If a tie occurs, it may be broken arbitrarily.
+In order to improve from that, Warnsdorff's rule can be applied. [Warnsdorff's rule](https://en.wikipedia.org/wiki/Knight%27s_tour#Warnsdorff.27s_algorithm) is a heuristic which states that in each step of the tour, the square with the least possible moves the knight can make from that square is favored. If a tie occurs, it may be broken arbitrarily.
 
 {% highlight python %}
 def next_possible_moves(current, board, boardsize):
@@ -129,8 +111,7 @@ def knight_tour(start, board, count):
     return True
 {% endhighlight %}
 
-The idea is to have a list of possible moves and calculate and store the number of possible moves from each of those moves and choose the move with fewest onward moves. 
-Nevertheless, here is the full source code.
+The idea is to have a list of possible moves (`next_possible_moves()`) and calculate and store the number of possible moves from each of those moves (`warnsdorff()`) and choose the move with fewest onward moves. Reaching a dead-end means, there are no possible moves returning from the `warnsdorff` function.
 
 {% highlight python %}
 X = 0
@@ -228,4 +209,4 @@ Start: e2
 
 This approach works well for really big boards as well. A Knight's Tour can be found in a few seconds during my testing with big boards. _(`N=200,300,400`)_
 
-As you can see, I didn't do anything special for ties. However, as far as I have researched, there are [some approaches](http://dl.acm.org/citation.cfm?id=363463) to break the ties in more specific manners instead of choosing arbitrarily.
+As you can see, I rely on Python's `sorted()` function and didn't do anything special for ties. However, as far as I have researched, there are [some approaches](http://dl.acm.org/citation.cfm?id=363463) to break the ties in more specific manners instead of choosing arbitrarily.
