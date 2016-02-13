@@ -1,28 +1,28 @@
 # Dependencies
-markdown:         kramdown
-extensions:       [fenced_code_blocks]
-highlighter:      rouge
+markdown:           kramdown
+extensions:         [fenced_code_blocks]
+highlighter:        rouge
 
 # Plugins
-gems:             [jekyll-paginate, jekyll-gist, jekyll-compose]
+gems:               [jekyll-paginate, jekyll-gist, jekyll-compose]
 
 # Permalinks
-permalink:        pretty
+permalink:          pretty
 
 # Setup
-title:            Lambda Sphere
-tagline:          'I code. Therefore, I am.'
-description:      'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random musings.'
-url:              https://khzaw.github.io
-analytics_id:     UA-27148803-1
+title:              Lambda Sphere
+tagline:            'Codito Ergo Sum'
+description:        'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random musings.'
+url:                https://khzaw.github.io
+analytics_id:       UA-27148803-1
 
 author:
-  name:           'Kaung Htet Zaw'
-  url:            https://twitter.com/khzaw
+  name:             'Kaung Htet Zaw'
+  url:              https://twitter.com/khzaw
 
-paginate:         7
+paginate:           7
 
 # Custom vars
-github:           https://github.com/khzaw
-twitter:          https://twitter.com/khzaw
-email:            emoosx@gmail.com
+github:             https://github.com/khzaw
+twitter:            https://twitter.com/khzaw
+email:              emoosx@gmail.com

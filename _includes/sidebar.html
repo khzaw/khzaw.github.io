@@ -1,7 +1,10 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+    <div class="sidebar-avatar">
+      <img src="http://www.gravatar.com/avatar/e032d287cce8230e86a6eb7da55fdda7?s=200" />
+    </div>
     <div class="sidebar-about">
-      <h1>{{ site.title }}</h1>
+      <a href="{{ site.url }}"><h1>{{ site.title }}</h1></a>
       <p class="lead">{{ site.tagline }}</p>
     </div>
 
@@ -26,7 +29,7 @@
         {% endif %}
       {% endfor %}
 
-      {% comment %} <li class="sidebar-nav-item"><a href="{{ site.github.repo }}">GitHub project</a></li> {% endcomment %}
+      <li class="sidebar-nav-item"><a href="https://github.com/khzaw">GitHub</a></li> 
     </ul>
   </div>
 </div>

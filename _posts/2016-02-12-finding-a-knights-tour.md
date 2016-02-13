@@ -3,6 +3,7 @@ layout: post
 title: Finding A Knight's Tour
 tags: algorithms, chess, programming
 image: chess-knight.jpg
+excerpt: A Knight's Tour is a sequence of moves done by a knight on a chessboard such that it visits each and every square exactly once. Subsequently, the objective of the Knight's Tour  problem is to determine whether there exists a Knight's Tour from a given starting position.
 ---
 
 {% include image.html url="/img/chess-knight.jpg" %}
@@ -82,7 +83,7 @@ if __name__ == '__main__':
 
 Most of the magic happens in the `knight-tour` function in which, the search starts from the initial position on the board (`count=1`). From the current position, possible legal knight moves are generated and tried out by incrementing the count and marking it on the board. If a move turns out to be leading a dead end, reset the board position and the count will be decremented and it would reach the end of the function (`return False`) and exit from a recursion instance. Eventually, a knight's tour will be found (`count == total`) provided that there is one.
 
-This approach works reasonably well for small boards but as the size of the board grows _(`N >= 7` onwards)_, the search will take exponentially longer as there would be more "center" pieces which have 8 possible moves.
+This approach works reasonably well for small boards but as the size of the board grows (`N >= 7` onwards ), the search will take exponentially longer as there would be more "center" pieces which have 8 possible moves.
 
 ## Warnsdorff's rule
 In order to improve from that, Warnsdorff's rule can be applied. [Warnsdorff's rule](https://en.wikipedia.org/wiki/Knight%27s_tour#Warnsdorff.27s_algorithm) is a heuristic which states that in each step of the tour, the square with the least possible moves the knight can make from that square is favored. If a tie occurs, it may be broken arbitrarily.
@@ -208,6 +209,6 @@ Start: e2
    18   31   48   35   20   29    2   51   22   27
 {% endhighlight %}
 
-This approach works well for really big boards as well. A Knight's Tour can be found in a few seconds during my testing with big boards. _(`N=200,300,400`)_
+This approach works well for really big boards as well. A Knight's Tour can be found in a few seconds during my testing with big boards. (`N=200,300,400`)
 
 As you can see, I rely on Python's `sorted()` function and didn't do anything special for ties. However, as far as I have researched, there are [some approaches](http://dl.acm.org/citation.cfm?id=363463) to break the ties in more specific manners instead of choosing arbitrarily.
