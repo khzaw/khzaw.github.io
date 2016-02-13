@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Finding A Knight's Tour
-tags: algorithms, chess
+tags: algorithms, chess, programming
+image: chess-knight.jpg
 ---
 
 {% include image.html url="/img/chess-knight.jpg" %}
