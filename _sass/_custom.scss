@@ -19,6 +19,14 @@
 .sidebar-avatar {
   img {
     border-radius: 50%;
-    margin-bottom: 1em;
+    margin: 0.5rem auto;
+  }
+}
+@media (min-width: 48rem) {
+  .sidebar-avatar {
+    margin-bottom: 2rem;
+    img {
+      margin-left: 0;
+    }
   }
 }
