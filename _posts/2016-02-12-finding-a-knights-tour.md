@@ -79,7 +79,7 @@ if __name__ == '__main__':
         print "No knight's tour"
 {% endhighlight %}
 
-Most of the magic happens in the `knight-tour` function in which, the search starts from the initial position on the board (`count=1`). From the current position, possible legal knight moves are generated and tried out by incrementing the count and marking it on the board. If a move turns out to be leading a dead end, reset the board position and the count will be decremented and it would reach the end of the function (`return False`) and exit from the a recursion instance. Eventually, a knight's tour will be found (`count == total`) provided that there is one.
+Most of the magic happens in the `knight-tour` function in which, the search starts from the initial position on the board (`count=1`). From the current position, possible legal knight moves are generated and tried out by incrementing the count and marking it on the board. If a move turns out to be leading a dead end, reset the board position and the count will be decremented and it would reach the end of the function (`return False`) and exit from a recursion instance. Eventually, a knight's tour will be found (`count == total`) provided that there is one.
 
 This approach works reasonably well for small boards but as the size of the board grows _(`N >= 7` onwards)_, the search will take exponentially longer as there would be more "center" pieces which have 8 possible moves.
 
