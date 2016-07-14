@@ -4,7 +4,7 @@ title: The Worst Kind of Break-up
 tags: personal, reflection
 ---
 
-The worst kind of break-up is the one you have no say in. Not the raging argument that leads to a screaming *"Fuck You,"* breakup; not the sad, resigned, *"I love you but this isn’t going to work,"* breakup; not even the *"neither one of us are happy so let’s stop pretending,"* mutual breakup. Nope. 
+The worst kind of break-up is the one you have no say in. Not the raging argument that leads to a screaming "Fuck You," breakup; not the sad, resigned, "I love you but this isn’t going to work," breakup; not even the "neither one of us are happy so let’s stop pretending," mutual breakup. Nope. 
 
 > The worst one is the one you have no say in. 
 
