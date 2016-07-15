@@ -22,6 +22,9 @@
   }
 }
 @media (min-width: 48rem) {
+  .content {
+    max-width: 100%;
+  }
   .sidebar-avatar {
     margin-bottom: 2rem;
     img {
