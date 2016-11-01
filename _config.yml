@@ -12,8 +12,8 @@ permalink:          pretty
 # Setup
 title:              Lambda Sphere
 tagline:            'Codito Ergo Sum'
-description:        'Currently pursuing a Computer Science degree here in NUS. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random musings.'
-url:                https://khzaw.github.io
+description:        'Software Engineer. This blog serves as a purpose to document some of my steps throughout the lifelong learning journey as well as occasional random musings.'
+url:                http://kaunghtet.xyz
 
 author:
   name:             'Kaung Htet Zaw'
@@ -24,4 +24,4 @@ paginate:           7
 # Custom vars
 github:             https://github.com/khzaw
 twitter:            https://twitter.com/khzaw
-email:              emoosx@gmail.com
+email:              me@kaunghtet.xyz
