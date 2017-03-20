@@ -2,6 +2,7 @@
 layout: post
 title: Self-referencing keys in a JavaScript object declarations 
 tags: javascript, programming languages
+image: javascript.jpg
 ---
 
 Often times while programming in JavaScript, which I have been doing a lot lately, I find myself wanting to refer to a key that I have just declared when I am initializing an object.
