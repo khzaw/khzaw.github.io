@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Self-referencing keys in a JavaScript object declarations 
+title: Self-referencing keys in JavaScript object declarations 
 tags: javascript, programming languages
 image: javascript.jpg
 ---
