@@ -4,7 +4,7 @@ extensions:         [fenced_code_blocks]
 highlighter:        rouge
 
 # Plugins
-gems:               [jekyll-paginate, jekyll-gist, jekyll-compose]
+plugins:               [jekyll-paginate, jekyll-gist, jekyll-compose]
 
 # Permalinks
 permalink:          pretty
