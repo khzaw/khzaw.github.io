@@ -37,10 +37,11 @@ Most of my work can be seen on [Instagram](https://www.instagram.com/khzaw) and 
 ## Lens I currently own
 
 * Nikon 28mm f/2.8 AF-D
-* Carl Zeiss Jena Flektogon M42 35mm f/2.4
-* Sony Zeiss T* FE 55mm f/1.8
-* Sony FE 85mm f/1.4 GM
 * Sigma 35mm f/1.4 DG HSM ART
+* Sony Zeiss Distagon T**** FE 35mm f/1.4 ZA
+* Carl Zeiss Jena Flektogon M42 35mm f/2.4
+* Sony Zeiss Sonnar T* FE 55mm f/1.8 ZA
+* Sony FE 85mm f/1.4 GM
 * Samyang 135mm f/2 ED UMC
 * Sony FE 12-24mm F4 G
 * Fujifilm XF 56mm f/1.2 R
