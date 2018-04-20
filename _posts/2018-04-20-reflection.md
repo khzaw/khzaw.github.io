@@ -2,6 +2,7 @@
 layout: post
 title: Reflection
 tags: reflection, retrospective
+excerpt: Reflection 20 Apr 2018. Knowledge has a half-life. Either applies it or it decays. 
 ---
 
 {% include image.html url='/img/reflection.png' %}
@@ -23,6 +24,8 @@ tags: reflection, retrospective
 > Being open with your insecurities paradoxically makes you more confident and charismatic around others. The pain of honest confrontation is what generates the greatest trust and respect in your relationships. Suffering through your fears and anxieties is what allows you to build courage and perseverance.
 
 > Constant positivity is a form of avoidance, not a valid solution to life’s problems.
+
+- [Vipassana for Hackers](https://github.com/deobald/vipassana-for-hackers/blob/master/vipassana-for-hackers.pdf "Vipassana for Hackers")
 
 -------------------------------------------------------------------------------
 ## Thoughts

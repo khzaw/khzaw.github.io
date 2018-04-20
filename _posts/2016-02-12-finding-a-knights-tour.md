@@ -3,7 +3,7 @@ layout: post
 title: Finding A Knight's Tour
 tags: algorithms, chess, programming
 image: chess-knight.jpg
-excerpt: <p>A Knight's Tour is a sequence of moves done by a knight on a chessboard such that it visits each and every square exactly once. Subsequently, the objective of the Knight's Tour  problem is to determine whether there exists a Knight's Tour from a given starting position.</p>
+excerpt: A Knight's Tour is a sequence of moves done by a knight on a chessboard such that it visits each and every square exactly once. Subsequently, the objective of the Knight's Tour  problem is to determine whether there exists a Knight's Tour from a given starting position.
 ---
 
 {% include image.html url="/img/chess-knight.jpg" %}
