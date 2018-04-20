@@ -2,8 +2,6 @@
 layout: post
 title: Reflection
 tags: reflection, retrospective
-cover: thought.jpg
-image: pic.jpg
 ---
 
 {% include image.html url='/img/reflection.png' %}
